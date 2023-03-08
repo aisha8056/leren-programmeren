@@ -311,6 +311,13 @@ robotArm = RobotArm('exercise 12')
 
 # Jouw python instructies zet je vanaf hier:
 
+for b in range(3):
+    robotArm.grab()
+    robotArm.moveRight(8)
+    robotArm.drop()
+    
+
+
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
