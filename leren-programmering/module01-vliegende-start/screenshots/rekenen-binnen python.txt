@@ -1,8 +1,0 @@
-import math 
-
-my_list = ('1,239', '23')
-
-result = math.prod(map(int, my_list'))
-
-
-print(result) # 28,497
