@@ -4,13 +4,13 @@ robotArm = RobotArm('exercise 5')
 
 # Jouw python instructies zet je vanaf hier:
 
-for a in range(7):
+for step in range(7):
     robotArm.moveRight()
-for d in range(8):
+for box in range(8):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
-    if d < 7:
+    if box < 7:
         for b in range(2):
             robotArm.moveLeft()
 

@@ -239,7 +239,16 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 9')
 
 # Jouw python instructies zet je vanaf hier:
-
+teller = 1
+for i in range(0,4):
+    for i in range(0, teller):
+        robotArm.grab()
+        for i in range(0,4): robotArm.moveRight()
+        robotArm.drop()
+        for i in range(0,4): robotArm.moveLeft()
+    robotArm.moveRight()
+    teller += 1
+robotArm.wait()
 
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
@@ -258,14 +267,7 @@ robotArm = RobotArm('exercise 10')
 
 # Jouw python instructies zet je vanaf hier:
 
-for a in range(4):
-    robotArm.moveRight()
-    robotArm.grab()
-    robotArm.moveLeft()
-    robotArm.drop()
-    robotArm.moveRight()
-    robotArm.moveRight()
-    robotArm.moveLeft()
+
 
 
 # Na jouw code wachten tot het sluiten van de window:
@@ -284,14 +286,6 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 11')
 
 # Jouw python instructies zet je vanaf hier:
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
-for b in range(6):
-    robotArm.moveRight()
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
 
 
 # Na jouw code wachten tot het sluiten van de window:
@@ -311,11 +305,6 @@ robotArm = RobotArm('exercise 12')
 
 # Jouw python instructies zet je vanaf hier:
 
-for b in range(3):
-    robotArm.grab()
-    robotArm.moveRight(8)
-    robotArm.drop()
-    
 
 
 
