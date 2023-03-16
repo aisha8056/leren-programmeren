@@ -6,25 +6,42 @@ robotArm = RobotArm('exercise 11')
 
 counter = 9
 
-for move in range(counter):
+for move in range(9):
+    robotArm.moveRight()
+
+for move in range(9):
+    robotArm.moveLeft()
     robotArm.grab()
-    kleur = robotArm.scan()
-    if kleur == '':
-        break
-    if kleur == 'white':
+    color = robotArm.scan()
+    if color == "white":
         robotArm.moveRight()
         robotArm.drop()
-        robotArm.moveRight()
+        robotArm.moveLeft()
+
     else:
         robotArm.drop()
-        robotArm.moveRight()
 
+
+
+
+
+# for move in range(counter):
+#     robotArm.moveLeft()
+#     kleur = robotArm.scan()
+
+#     if kleur == 'white':
+#         robotArm.moveRight()
+#         robotArm.drop()
+#         robotArm.moveRight()
+#     else:
+#         robotArm.drop()
+#         robotArm.moveRight()
 robotArm.wait()
 
 
-# Na jouw code wachten tot het sluiten van de window:
-robotArm.wait() 
+# # Na jouw code wachten tot het sluiten van de window:
+# robotArm.wait()
 
-#Verplaats alle witte blokken één plek naar rechts. 
+# #Verplaats alle witte blokken één plek naar rechts. 
 
-#Let op, de blokken zijn iedere keer anders als je het programma start!
+# #Let op, de blokken zijn iedere keer anders als je het programma start!
